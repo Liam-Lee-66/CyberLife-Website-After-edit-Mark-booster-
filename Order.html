@@ -1,0 +1,388 @@
+<!--
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CyberLife Online Store</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial.scale=1.0 user.scralable=yes" />
+
+    <!--Link for "style.css" (which came from "style.scss"-->
+    <link rel="stylesheet" type="text/css" href="StyleSheet/style.css" />
+
+    <!--Link for animation by, "Animate.css"-->
+    <!--Here's the link to their website: "https://animate.style/"-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <style> 
+        /*  
+            <!--Shows text "Currently Unavailable" when hover over Image-->
+            <!--Adjusted code that was provided from w3schools-->
+            <!--Link: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_fade-->
+        */
+        .container {
+            position: relative;
+            width: 100%;
+            margin: auto;
+        }
+        .image {
+            width: 100%;
+            height: auto;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+        .overlay {
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            left: 0%;
+            right: 0%;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            -webkit-transition: .5s ease;
+            -moz-transition: .5s ease;
+            -o-transition: .5s ease;
+            -ms-transition: .5s ease;
+            transition: .5s ease;
+            background-color: rgb(8, 59, 110);
+        }
+        .container:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* 
+            This contains 17 images of androids
+            Set images to 2 columns and 7 rows 
+        */
+        #grid-container {
+                margin: auto;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto;
+                justify-content: center;
+                row-gap: 10px;
+                width: 50%;
+                column-gap: 20px;
+            }
+        /*
+            (mobile version i would say?)
+            relocates images to one column when width is smaller than 750px
+        */
+        @media all and (max-width: 750px) {
+            #grid-container {
+                margin: auto;
+                display: grid;
+                grid-template-columns: 50%;
+                grid-template-rows: auto;
+                justify-content: center;
+                row-gap: 10px;
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <!--Div for title-->
+        <!--Animated to "fadeInLeft" when page loads up-->
+        <div class="titleDiv">
+            <a href="index.html">
+                <h1 class="animate__animated animate__fadeInLeft" style="font-size: 85px; color: white">CyberLife</h1>
+            </a>
+        </div>
+
+        <br>
+
+        <!--Div for other webpages-->
+        <nav>
+            <!--Link to "index.html"-->
+            <li>
+                <a class="linkToOther" href="index.html">Home</a>
+            </li>
+            <!--Link to "About-Us.html-->
+            <li>
+                <a class="linkToOther" href="About-Us.html">About Us</a>
+            </li>
+
+            <!--Link to "order.html"-->
+            <li>
+                <a class="linkToOther" href="Order.html">Store</a>
+            </li>
+
+            <!--Link to "Interview.html"-->
+            <li>
+                <a class="linkToOther" href="Interview.html">Company Interviews</a>
+            </li>
+        </nav>
+    </header>
+
+    <!--Separate Header from Main-->
+    <br>
+    <br>
+
+    <!--Main body content-->
+    <main>
+        <!--Quote by CyberLife-->
+        <!--Has "zoomIn" animation-->
+        <div class="BackgroundForText" style="width: 45%;">
+            <p class="animate__animated animate__zoomIn" style="font-size: 20px;">"Designed by Cyber<span
+                    style="font-weight: bolder">Life</span>, Assesmbled in <span
+                    style="font-weight: bolder;">Detroit.</span>"</p>
+        </div>
+
+        <!--Grid container div-->
+        <div id="grid-container">
+
+            <!--AZ110 ordering image-->
+            <div class="container">
+                <img src="Image/AZ110 order.jpg" alt="Ordering image for AZ110" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+            <!--CP100 ordering image-->
+            <div class="container">
+                <img src="Image/CP100 order.jpg" alt="Ordering image for CP100" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--GB200 ordering image-->
+            <div class="container">
+                <img src="Image/GB200 order.jpg" alt="Ordering image for GB200" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--GJ200 ordering image-->
+            <div class="container">
+                <img src="Image/GJ200 order.jpg" alt="Ordering image for GJ200" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--HW800 ordering image-->
+            <div class="container">
+                <img src="Image/HW800 order.jpg" alt="Ordering image for HW800" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--KL400 ordering image-->
+            <div class="container">
+                <img src="Image/KL400 order.jpg" alt="Ordering image for KL400" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--MJ100 ordering image-->
+            <div class="container">
+                <img src="Image/MJ100 order.jpg" alt="Ordering image for MJ100" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--MP800 ordering image-->
+            <div class="container">
+                <img src="Image/MP800 order.jpg" alt="Ordering image for MP800" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--NC200 ordering image-->
+            <div class="container">
+                <img src="Image/NC200 order.jpg" alt="Ordering image for NC200" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--OA400 ordering image-->
+            <div class="container">
+                <img src="Image/OA400 order.jpg" alt="Ordering image for OA400" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--PL500 ordering image-->
+            <div class="container">
+                <img src="Image/PL500 order.jpg" alt="Ordering image for PL500" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--SD600 ordering image-->
+            <div class="container">
+                <img src="Image/SD600 order.jpg" alt="Ordering image for SD600" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--SK300 ordering image-->
+            <div class="container">
+                <img src="Image/SK300 order.jpg" alt="Ordering image for SK300" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+
+                </div>
+            </div>
+
+            <!--SK700 ordering image-->
+            <div class="container">
+                <img src="Image/SK700 order.jpg" alt="Ordering image for SK700" class="image">
+                <!--Text showing "Currently Unavailable" when hover-->
+                <div class="overlay">
+                    <p class="text">Currently Unavailable <span style="text-decoration: underline;">Online.</span>
+                        Please visit the nearest <span style="font-weight: bolder;">CyberLife</span> store for purchase.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!--Do not touch this bottom section-->
+    <!-- This is meant for showing the logo of the background -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <!--Credits-->
+        <div class="lastDiv">
+            <!--My info-->
+            <p>Web Designer/Developer: Liam Lee</p>
+            <!--Contact acts like a link if you press on it-->
+            <p>Contact: <span style="font-weight: bolder;"><a
+                        href="mailto: liamsjlee@gmail.com">liamsjlee@gmail.com</a></span> / <span
+                    style="font-weight: bolder;"><a href="tel:4313372449">431-337-2449</a></span></p>
+
+            <!--Original mentioning-->
+            <p>The fictional Company <span style="font-weight: bolder;">CyberLife</span> is from the game <a
+                    href="https://www.quanticdream.com/en/detroit-become-human"><span
+                        style="font-weight: bolder;">Detroit: Become Human</span></a>.</p>
+            <p>The game <a href="https://www.quanticdream.com/en/detroit-become-human"><span
+                        style="font-weight: bolder;">Detroit: Become Human</span></a> is made by <a
+                    href="https://www.quanticdream.com/en"><span style="font-weight: bolder;">Quatntic Dream.</span></a>
+            </p>
+
+            <!--More info-->
+            <p>Several Images displayed are In-Game-Footages + Edited by Liam Lee.</p>
+            <p>Help: Zacharias Zachariadis.</p>
+        </div>
+
+        <!--Somehow fixes the text colour to stay white/dark green, rather than pruple-->
+        <script> </script>
+
+    </footer>
+</body>
+
+</html>

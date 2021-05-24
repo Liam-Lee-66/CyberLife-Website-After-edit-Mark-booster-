@@ -1,0 +1,64 @@
+/*
+<!--
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+-->  
+*/
+
+header {
+    .titleDiv {
+        text-align: center;
+        background-color: rgb(8, 59, 110);
+        height: 100px;
+
+        a {
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 85px;
+            color: white;
+        }
+    }
+    nav {
+        text-align: center;
+
+        position: -webkit- sticky;
+        position: sticky;
+        top: 0;
+
+        background-color: rgb(2, 36, 70);
+
+        li {
+            display: inline-block;
+            padding: 10px;
+            margin: 17px 20px 17px 0px;
+            background-color: rgb(32, 54, 101);
+            border-radius: 4px;
+
+            a {
+                text-decoration: none;
+                color: white;
+                text-decoration: none;
+            }
+            .linkToOther {
+                color: white;
+                font-size: 23px;
+                -webkit-transition: color 0.5s;
+                -o-transition: color 0.5;
+                -ms-transition: color 0.5s;
+                -moz-transition: color 0.5s;
+                transition: color 0.5s;
+
+                &:visited {
+                    color: darkcyan;
+                }
+                &:hover {
+                    color: yellow;
+                }
+            }
+        }
+    }
+}

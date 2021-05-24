@@ -1,0 +1,210 @@
+<!--
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+-->  
+<!DOCTYPE html>
+<html>   
+    <head>
+        <title>CyberLife</title>
+        <meta charset= "utf-8"/>
+        <meta name="viewport" content="initial.scale=1.0 user.scralable=yes" />
+
+        <!--Link for "style.css" (which came from "style.scss"-->
+        <link rel="stylesheet" type="text/css" href="StyleSheet/style.css"/>
+        
+        <!--Link for animation by, "Animate.css"-->
+        <!--Here's the link to their website: "https://animate.style/"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <style>
+            img
+            {
+                width: 56.25%;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #button 
+            {
+                background-color: whitesmoke; 
+                border: #3d65e9;
+                color: #3d65e9;
+                padding: 16px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                -webkit-transition: transform 1s ease-in-out;
+                -moz-transition: transform 1s ease-in-out;
+                -o-transition: transform 1s ease-in-out;
+                -ms-transition: transform 1s ease-in-out;
+                transition: transform 1s ease-in-out;
+                cursor: pointer;
+            }
+            #button:hover 
+            {
+                background-color: #3d65e9;
+                color: white;
+                padding: 16px 24px;
+                margin: 4px 2px;
+            }
+            #button:hover a
+            {
+                display: none;
+            }
+            #button:hover:before
+            {
+                content: "Click to ";
+            }
+        </style>
+
+    </head>
+    
+    <body>
+        <header>
+            <!--Div for title-->
+            <!--Animated to "fadeInLeft" when page loads up-->
+            <div class="titleDiv">
+                <a href="index.html"><h1 class="animate__animated animate__fadeInLeft">CyberLife</h1></a>
+            </div>
+
+            <br>
+
+            <!--Div for other webpages-->
+            <nav>
+                <!--Link to "index.html"-->
+                <li>
+                    <a class="linkToOther" href="index.html">Home</a>
+                </li>
+                <!--Link to "About-Us.html-->
+                <li>
+                    <a class="linkToOther" href="About-Us.html">About Us</a>
+                </li>
+              
+                <!--Link to "order.html"-->
+                <li>
+                    <a class="linkToOther" href="Order.html">Store</a>      
+                </li>
+                   
+                <!--Link to "Interview.html"-->
+                <li>
+                    <a class="linkToOther" href="Interview.html">Company Interviews</a>
+                </li>
+            </nav>
+        </header>
+
+        <!--Separate Header from Main-->
+        <br>
+        <br>
+
+        <!--Main body content-->
+        <main>
+            <!--CyberLife quote-->
+            <!--Has "zoomIn" animation-->
+            <div class="BackgroundForText" style="width: 45%;">
+                <p class="animate__animated animate__zoomIn" style="font-size: 20px;">"Designed by Cyber<span style="font-weight: bolder">Life</span>, Assesmbled in <span style="font-weight: bolder;">Detroit.</span>"</p>
+            </div>
+
+            <!--Android General Advertisement-->
+            <!--Click on Image to open page "Order.html"-->
+            <a href="Order.html"><img src="Image/getYoursToday.jpg" alt="Android Advertisement"></a>
+
+            <!--Spacing out-->
+            <br>
+            <br>
+            <br>
+
+            <!--Advertising popular selections-->
+            <div class="BackgroundForText">
+                <p style="font-size: 70px;">Popular Selections</p>
+            </div>
+            
+            <!--Advertisement for AX400-->
+            <img src="Image/ax400.png" alt="Advertisement for the AX400" height="auto" width="1280">
+
+            <!--Spacing out-->
+            <br>
+            <br>
+            <br>
+
+            <!--Advertisement for PL600-->
+            <img src="Image/PL600.png" alt="Advertisement for the PL600" height="auto" width="1280">
+
+            <!--Spacing out-->
+            <br>
+            <br>
+            <br>
+
+            <!--Advertisement for PL500-->
+            <img src="Image/PJ500.png" alt="Advertisement for the PJ500" height="auto" width="1280">
+
+            <!--Spacing out-->
+            <!--Didn't make the space too big, so it doesn't feel/look like the button is for a different use-->
+            <br>
+
+            <!--button to open page "Order.html"-->
+            <a href="Order.html" id="button">Order Here</a>
+
+        </main>
+
+        <!--Do not touch this bottom section-->
+        <!-- This is meant for showing the logo of the background -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer>    
+            <!--Credits-->
+            <div class="lastDiv">
+                <!--My info-->
+                <p>Web Designer/Developer: Liam Lee</p>
+                <!--Contact acts like a link if you press on it-->
+                <p>Contact: <span style="font-weight: bolder;"><a href="mailto: liamsjlee@gmail.com">liamsjlee@gmail.com</a></span> / <span style="font-weight: bolder;"><a href="tel:4313372449">431-337-2449</a></span></p>
+
+                <!--Original game + developer mentioning-->
+                <p>The fictional Company <span style="font-weight: bolder;">CyberLife</span> is from the game <a href="https://www.quanticdream.com/en/detroit-become-human"><span style="font-weight: bolder;">Detroit: Become Human</span></a>.</p>
+                <p>The game <a href="https://www.quanticdream.com/en/detroit-become-human"><span style="font-weight: bolder;">Detroit: Become Human</span></a> is made by <a href="https://www.quanticdream.com/en"><span style="font-weight: bolder;">Quatntic Dream.</span></a></p>
+
+                <!--More info-->
+                <p>Several Images displayed are In-Game-Footages + Edited by Liam Lee.</p>
+                <p>Help: Zacharias Zachariadis.</p>    
+            </div>
+
+            <!--Somehow fixes the text colour to stay white/dark green, rather than pruple-->
+            <script> </script>
+
+        </footer>
+    </body>
+</html>

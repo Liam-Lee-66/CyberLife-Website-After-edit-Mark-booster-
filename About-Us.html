@@ -1,0 +1,300 @@
+<!--
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+-->  
+<!DOCTYPE html>
+<html>  
+    <head>
+        <title>About CyberLife</title>
+        <meta charset= "utf-8"/>
+        <meta name="viewport" content="initial.scale=1.0 user.scralable=yes" />
+
+        <!--Link for "style.css" (which came from "style.scss"-->
+        <link rel="stylesheet" type="text/css" href="StyleSheet/style.css"/>
+        
+        <!--Link for animation by, "Animate.css"-->
+        <!--Here's the link to their website: "https://animate.style/"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <style>
+            #button 
+            {
+                background-color: whitesmoke; 
+                border: #3d65e9;
+                color: #3d65e9;
+                padding: 16px 24px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                -webkit-transition: color 0.5s ease-out;
+                -moz-transition: color 0.5s ease-out;
+                -o-transition: color 0.5s ease-out;
+                -ms-transition: color 0.5s ease-out;
+                transition: color 0.5s ease-out;
+                cursor: pointer;
+            }
+            #button:hover 
+            {
+                background-color: #3d65e9;
+                color: white;
+                padding: 16px 24px;
+                margin: 4px 2px;
+            }
+
+            /*
+                Flexbox for the "Services" section. 
+                It was originally a div holding two different elements, changed to Flexbox. 
+                Now after fixing it to flexbox, the information + image looks the same with different sized display
+            */
+            #flexForServices
+            {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            #TextForKamski
+            {
+                float: right;
+                text-align: right;
+                padding: 10px 10px 10px 10px;
+            }
+
+            /*
+                "Meet Founder Kamski" had many problems before I used Flexbox.
+                Now replacing it to flexbox it doesn't go super weird with different devices other than the 2-in-1.
+            */
+            #flexForKamski
+            {
+                display: flex;
+                flex-direction: row;
+
+                -webkit-justify-content: center;
+                -ms-justify-content: center;
+                -o-justify-content: center;
+                -moz-justify-content: center;
+                justify-content: center;
+
+                -webkit-align-items: center;
+                -ms-align-items: center;
+                -o-align-items: center;
+                -moz-align-items: center;
+                align-items: center;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <!--Div for title-->
+            <!--Animated to "fadeInLeft" when page loads up-->
+            <div class="titleDiv">
+                <a href="index.html"><h1 class="animate__animated animate__fadeInLeft" style="font-size: 85px; color: white">CyberLife</h1></a>
+            </div>
+
+            <br>
+
+            <!--Div for other webpages-->
+            <nav>
+                <!--Link to "index.html"-->
+                <li>
+                    <a class="linkToOther" href="index.html">Home</a>
+                </li>
+                <!--Link to "About-Us.html-->
+                <li>
+                    <a class="linkToOther" href="About-Us.html">About Us</a>
+                </li>
+              
+                <!--Link to "order.html"-->
+                <li>
+                    <a class="linkToOther" href="Order.html">Store</a>      
+                </li>
+                   
+                <!--Link to "Interview.html"-->
+                <li>
+                    <a class="linkToOther" href="Interview.html">Company Interviews</a>
+                </li>
+            </nav>
+        </header>
+
+        <!--Separate Header from Main-->
+        <br>
+        <br>
+
+        <!--Main body content-->
+        <main>
+            <!--CyberLife quote-->
+            <!--Has "zoomIn" animation-->
+            <div class="BackgroundForText" style="width: 45%;">
+                <p class="animate__animated animate__zoomIn" style="font-size: 20px;">"Designed by Cyber<span style="font-weight: bolder">Life</span>, Assesmbled in <span style="font-weight: bolder;">Detroit.</span>"</p>
+            </div>
+
+            <br>
+            <br>
+
+            <!--Title for "About CyberLife"-->
+            <div class="BackgroundForText">
+                <h1>About CyberLife</h1>
+            </div>
+
+            <!--Basic explaination of CyberLife-->
+            <div class="BackgroundForText" style="padding: 10px 10px 10px 10px; text-align:center;">
+                <!--Image showing CyberLife's warehouse-->
+                <img src="https://cdn.akamai.steamstatic.com/steam/apps/1222140/ss_b1e2a185bea13cccfc662e1286912bcd6f4ee798.1920x1080.jpg?t=1600092540" style="width: 98%; float: top; border: black; -webkit-border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px;" alt="Image of one of CyberLife's Warehouse.">
+                <!--Explaination paragraphs-->
+                <p>CyberLife is the world's leading Android designer, manufacturer, and retailer of Androids in Detroit, Michigan.</p>
+                <p>With the Founder <span style="font-weight: bold;">Elijah Kamski</span>, CyberLife promises to provide many different types of Androids. From teachers, doctors, police officers and even soldiers.</p>
+            </div>
+
+            <!--Spacing out-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--Title for content-->
+            <div class="BackgroundForText">
+                <h1>Services from CyberLife</h1>
+            </div>
+
+            <br>
+
+            <!--Invisible Div for holding two elements into two equal places-->
+            <!--Explaination of available services-->       
+            <!--flexbox for "Services from CyberLife"-->     
+            <div id="flexForServices">                
+                <!--Explaination of Androids production-->
+                <div class="BackgroundForText" style="width:45%;">
+                    <h3 style="text-decoration: underline;">Androids</h3>
+
+                    <!--Image showing "Chloe"-->
+                    <img src="https://cdn.vox-cdn.com/thumbor/nKqiLrOuEpxp-meOI5nB0NDtjpo=/0x0:1280x720/1200x800/filters:focal(538x258:742x462)/cdn.vox-cdn.com/uploads/chorus_image/image/60042087/chloe.0.jpg" style="margin:auto; width: 95%; border-radius: 10px;" alt="Image of Chloe, RT600.">
+
+                    <!--Explaination paragraph-->
+                    <p>Androids produced by <span style="font-weight: bolder;">CyberLife</span> contains the most up-to-date Artificial Intelligence software.</p>
+                    <p>Most recently released models being able to cook over 10,000 different dishes, and speaking over 200 different langueages and dialects.</p>
+                </div>
+            
+                <!--Explaination of Parts & Thirum-->
+                <div class="BackgroundForText" style="width: 45%;">
+                    <h3 style="text-decoration: underline;">Components</h3>
+
+                    <!--Image showing "Blue Blood"-->
+                    <img src="data:image/jpeg;base64,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" style="margin:auto; width: 80%; -webkit-border-radius: 10px; -moz-border-radius: 10px; -o-border-radius: 10px; -ms-border-radius: 10px; border-radius: 10px;" alt="Image of Thirium 310, Blue blood.">
+
+                    <!--Explaination paragraph-->
+                    <p>Androids produced by <span style="font-weight: bolder;">CyberLife</span> are powered by biocomponents and fueled by Thirium 310, commonly known as "Blue Blood."</p> 
+                    <p>Androids purchased in store, have a two year warranty for damaged parts and biocomponents.</p>
+                </div>
+            </div>
+
+            <!--spacing out-->
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <!--Title for "Meet our Founder, Kamski"-->
+            <div class="BackgroundForText">
+                <h1>Meet our Fouder, <span style="text-decoration: underline;">Kamski</span></h1>
+            </div>
+
+            <br>
+
+            <!--"About Kamski" content-->
+            <!--also a flexbox-->
+            <!--Flexbox holds both image and text-->
+            <div class="BackgroundForText" id="flexForKamski" style="margin: auto;">
+                <!--Image of Elijah Kamski. Image was taken during Kamski's interview-->
+                <img src="http://images6.fanpop.com/image/photos/41400000/Elijah-Kamski-detroit-become-human-41486800-487-738.jpg" style="width: 50%;float: left; padding: 10px 10px 10px 10px;" alt="Image of Elijah Kamski.">
+                <div id="TextForKamski">
+                    <p>Elijah Kamski is the scientist who first introduced Androids to our society. He is the Founder and the current CEO of <span style="font-weight: bolder;">CyberLife</span>.</p>
+                    &nbsp;
+                    <p>Elijah Kamski was born on July 17th, 2002. He studied and became an AI Graduate at the University of Colbridge, under Professor Amanda Stern. In 2018, aged 16, Kamski founded the company CyberLife, after graduating university. As a young researcher, he moved to Detroit in order to create the first intelligent Android.</p>
+                    &nbsp;
+                    <p>In age 20, his company shocks everyone by creating the first Android to pass the Turing test. The android named "Chloe" publicly passes face-to-face tests and stuns the world.</p> 
+                    &nbsp;
+                    <p>This shocking event was possible thanks to Kamski inventing the, "Thirium 310."" A chemical solution that mimics the functioning of human blood but several thousand times faster, distributing information and energy throughout the machine much like human circulation.</p>
+                </div>
+            </div>
+            <!--spacing out-->
+            <br>
+
+            <!--button to interview page-->
+            <a href="Interview.html" id="button">Interviews</a>
+        </main>
+
+        <!--Do not touch this bottom section-->
+        <!-- This is meant for showing the logo of the background -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>       
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <footer>    
+            <!--Credits-->
+            <div class="lastDiv">
+                <!--My info-->
+                <p>Web Designer/Developer: Liam Lee</p>
+                <!--Contact acts like a link if you press on it-->
+                <p>Contact: <span style="font-weight: bolder;"><a href="mailto: liamsjlee@gmail.com">liamsjlee@gmail.com</a></span> / <span style="font-weight: bolder;"><a href="tel:4313372449">431-337-2449</a></span></p>
+
+                <!--Original mentioning-->
+                <p>The fictional Company <span style="font-weight: bolder;">CyberLife</span> is from the game <a href="https://www.quanticdream.com/en/detroit-become-human"><span style="font-weight: bolder;">Detroit: Become Human</span></a>.</p>
+                <p>The game <a href="https://www.quanticdream.com/en/detroit-become-human"><span style="font-weight: bolder;">Detroit: Become Human</span></a> is made by <a href="https://www.quanticdream.com/en"><span style="font-weight: bolder;">Quatntic Dream.</span></a></p>
+
+                <!--More info-->
+                <p>Several Images displayed are In-Game-Footages + Edited by Liam Lee.</p>
+                <p>Help: Zacharias Zachariadis.</p>    
+            </div>
+            
+            <!--Somehow fixes the text colour to stay white/dark green, rather than pruple-->
+            <script> </script>
+        
+        </footer>
+    </body>
+</html>

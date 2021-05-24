@@ -1,0 +1,148 @@
+/* 
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+*/
+/* 
+    basically replaced the original "style.css" to SASS
+    This "style.scss" is used by every webpage of this website. Like I wrote above, just like the original "style.css"
+*/
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+    I wanted to try using "@import" commands, but didn't exactly know where to use them. 
+    I simply made two new SASS files, pasting the code replacing their spots with "@import" 
+*/
+/*
+<!--
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+-->  
+*/
+header .titleDiv {
+  text-align: center;
+  background-color: #083b6e;
+  height: 100px;
+}
+
+header .titleDiv a {
+  text-decoration: none;
+}
+
+header .titleDiv h1 {
+  font-size: 85px;
+  color: white;
+}
+
+header nav {
+  text-align: center;
+  position: -webkit- -webkit-sticky;
+  position: -webkit- sticky;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #022446;
+}
+
+header nav li {
+  display: inline-block;
+  padding: 10px;
+  margin: 17px 20px 17px 0px;
+  background-color: #203665;
+  border-radius: 4px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+
+header nav li .linkToOther {
+  color: white;
+  font-size: 23px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+header nav li .linkToOther:visited {
+  color: darkcyan;
+}
+
+header nav li .linkToOther:hover {
+  color: yellow;
+}
+
+/*
+<!--
+    Name: Liam Lee
+    Course: Web Development 
+    Teacher: Mr. Hardman
+    School: Pembinatrails Early College
+    Date Last Modified: 2021-05-24
+-->  
+*/
+footer .lastDiv {
+  position: absolute;
+  background-color: #083b6e;
+  color: white;
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  -webkit-column-rule-style: solid;
+          column-rule-style: solid;
+  -webkit-column-rule-color: white;
+          column-rule-color: white;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer .lastDiv a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+footer .lastDiv a:hover {
+  color: yellow;
+}
+
+/*
+    Didn't think moveing the codes below was necessary, since they are essential elements for the website to work.
+*/
+body {
+  background-image: url(back.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+main {
+  color: white;
+  text-align: center;
+}
+
+img {
+  width: 33%;
+  height: auto;
+}
+
+.BackgroundForText {
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  background-color: #19294b;
+  width: 70%;
+}
